@@ -1,0 +1,9 @@
+server:
+  port: 8090
+
+# JDoodle API credentials
+# https://www.jdoodle.com/
+# TODO 更换为自己的密钥
+jdoodle:
+  clientId: your_client_id
+  clientSecret: your_client_secret

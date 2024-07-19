@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "jdoodle.clientId",
+      "type": "java.lang.String",
+      "description": "Description for jdoodle.clientId."
+    },
+    {
+      "name": "jdoodle.clientSecret",
+      "type": "java.lang.String",
+      "description": "Description for jdoodle.clientSecret."
+    }
+  ]
+}
