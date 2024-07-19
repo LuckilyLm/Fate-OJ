@@ -52,6 +52,7 @@ dist/
 # IDE and editor files
 .idea/
 .vscode/
+.classPath/
 *.sublime-workspace
 *.sublime-project
 
