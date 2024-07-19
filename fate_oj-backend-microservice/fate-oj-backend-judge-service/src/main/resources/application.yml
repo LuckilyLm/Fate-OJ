@@ -1,0 +1,72 @@
+spring:
+  application:
+    name: fateoj-backend-judge-service
+#  # 默认 dev 环境
+#  profiles:
+#    active: dev
+  # 支持 swagger3
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  # 注册到 nacos
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+  # session 配置
+  session:
+    store-type: redis
+    # 30 天过期
+    timeout: 2592000
+
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/oj?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: your_username
+    password: your_password
+
+  # Redis 配置
+  redis:
+    database: 1
+    host: host
+    port: 6379
+    timeout: 5000
+    password: redis
+
+  # RabbitMQ 配置
+  rabbitmq:
+    host: host
+    port: 5672
+    username: guest
+    password: guest
+    connectionTimeout: 60000  # 连接超时时间，单位为毫秒
+
+  # 文件上传
+  servlet:
+    multipart:
+      # 大小限制
+      max-file-size: 10MB
+server:
+  address: 0.0.0.0
+  port: 8084
+  servlet:
+    context-path: /api/judge
+    # cookie 30 天过期
+    session:
+      cookie:
+        max-age: 2592000
+        path: /api
+
+# 代码沙箱类型配置
+codesandbox:
+  type: remote
+
+# 开启swaggger文档
+knife4j:
+  enable: true
+
+
+

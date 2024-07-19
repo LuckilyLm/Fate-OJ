@@ -1,0 +1,48 @@
+server:
+  port: 8085
+
+knife4j:
+  gateway:
+    enabled: true
+    strategy: discover
+    discover:
+      enabled: true
+      version: swagger2
+
+spring:
+  application:
+    name: fateoj-backend-gateway
+  main:
+    web-application-type: reactive
+  # 注册到 nacos
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    # 配置路由
+    gateway:
+      routes:
+        - id: fateoj-backend-user-service
+          uri: lb://fateoj-backend-user-service
+          predicates:
+            - Path=/api/user/**
+
+        - id: fateoj-backend-question-service
+          uri: lb://fateoj-backend-question-service
+          predicates:
+            - Path=/api/question/**
+
+        - id: fateoj-backend-judge-service
+          uri: lb://fateoj-backend-judge-service
+          predicates:
+            - Path=/api/judge/**
+
+
+
+
+
+
+
+
+
+
