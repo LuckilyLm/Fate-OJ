@@ -13,6 +13,7 @@ fate_oj-frontend 前端<br/>
 
 
 <h3>3.使用的一些技术栈</h3>
+<h4>后端</h4>
 Java Spring Cloud + Spring Cloud Alibaba 微服务<br/>
 Nacos 注册中心<br/>
 OpenFeign 客户端调用<br/>
@@ -24,3 +25,13 @@ MySQL 数据库<br/>
 MyBatis-Plus 及 MyBatis X 自动生成<br/>
 Redis 分布式 Session<br/>
 RabbitMQ 消息队列<br/>
+
+<h4>前端</h4>
+Vue3
+Vue-CLI 脚手架
+Vuex 状态管理
+Arco Design 组件库
+前端工程化：ESLint + Prettier + TypeScript
+Markdown 富文本编辑器
+Monaco Editor 代码编辑器
+OpenAPI 前端代码生成
