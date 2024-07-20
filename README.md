@@ -27,11 +27,11 @@ Redis 分布式 Session<br/>
 RabbitMQ 消息队列<br/>
 
 <h4>前端</h4>
-Vue3
-Vue-CLI 脚手架
-Vuex 状态管理
-Arco Design 组件库
-前端工程化：ESLint + Prettier + TypeScript
-Markdown 富文本编辑器
-Monaco Editor 代码编辑器
-OpenAPI 前端代码生成
+Vue3<br/>
+Vue-CLI 脚手架<br/>
+Vuex 状态管理<br/>
+Arco Design 组件库<br/>
+前端工程化：ESLint + Prettier + TypeScript<br/>
+Markdown 富文本编辑器<br/>
+Monaco Editor 代码编辑器<br/>
+OpenAPI 前端代码生成<br/>
